@@ -1,0 +1,21 @@
+@use "./SASS/helpers/mixins" as *;
+ul.links {
+  @include list-reset;
+}
+
+.circle-100 {
+  @include circle(100px);
+  background-color: red;
+  color: white;
+}
+
+.circle-200 {
+  @include circle(200px);
+  background-color: red;
+  color: white;
+}
+
+.center-circle {
+  @include circle(400px);
+  @include centering;
+}
